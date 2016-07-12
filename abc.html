@@ -1,0 +1,398 @@
+sonali@Lenovo:~$ cd git
+sonali@Lenovo:~/git$ git clone https://github.com/sonali1223/java.git
+Cloning into 'java'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+sonali@Lenovo:~/git$ cd java
+sonali@Lenovo:~/git/java$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Spring/
+
+nothing added to commit but untracked files present (use "git add" to track)
+sonali@Lenovo:~/git/java$ git add Spring/
+sonali@Lenovo:~/git/java$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Spring/.project
+	new file:   Spring/bin/.project
+	new file:   Spring/bin/target/m2e-wtp/web-resources/META-INF/maven/in.bench.resources/SpringMVC-Annotation/pom.properties
+	new file:   Spring/target/m2e-wtp/web-resources/META-INF/maven/in.bench.resources/SpringMVC-Annotation/pom.properties
+
+sonali@Lenovo:~/git/java$ git commit
+Aborting commit due to empty commit message.
+sonali@Lenovo:~/git/java$ git commit -m "spring ann updated"
+[master a23868d] spring ann updated
+ 4 files changed, 110 insertions(+)
+ create mode 100644 Spring/.project
+ create mode 100644 Spring/bin/.project
+ create mode 100644 Spring/bin/target/m2e-wtp/web-resources/META-INF/maven/in.bench.resources/SpringMVC-Annotation/pom.properties
+ create mode 100644 Spring/target/m2e-wtp/web-resources/META-INF/maven/in.bench.resources/SpringMVC-Annotation/pom.properties
+sonali@Lenovo:~/git/java$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+sonali@Lenovo:~/git/java$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': sonali1223
+Password for 'https://sonali1223@github.com': 
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (13/13), 1.37 KiB | 0 bytes/s, done.
+Total 13 (delta 0), reused 0 (delta 0)
+To https://github.com/sonali1223/java.git
+   d4fc0c4..a23868d  master -> master
+sonali@Lenovo:~/git/java$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+sonali@Lenovo:~/git/java$ ls
+README.md  Spring
+sonali@Lenovo:~/git/java$ git checkout 
+HEAD                origin/HEAD         origin/ppractical 
+master              origin/master       ppractical 
+sonali@Lenovo:~/git/java$ git checkout 
+HEAD                origin/HEAD         origin/ppractical 
+master              origin/master       ppractical 
+sonali@Lenovo:~/git/java$ git checkout 
+HEAD                origin/HEAD         origin/ppractical 
+master              origin/master       ppractical 
+sonali@Lenovo:~/git/java$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+sonali@Lenovo:~/git/java$ ls
+README.md  Spring
+sonali@Lenovo:~/git/java$ git checkout 
+HEAD                origin/HEAD         origin/ppractical 
+master              origin/master       ppractical 
+sonali@Lenovo:~/git/java$ git checkout 
+HEAD                origin/HEAD         origin/ppractical 
+master              origin/master       ppractical 
+sonali@Lenovo:~/git/java$ git checkout -A
+error: unknown switch `A'
+usage: git checkout [options] <branch>
+   or: git checkout [options] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach the HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+
+sonali@Lenovo:~/git/java$ git checkout -b
+error: switch `b' requires a value
+usage: git checkout [options] <branch>
+   or: git checkout [options] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach the HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+
+sonali@Lenovo:~/git/java$ git checkout -b homebranch
+Switched to a new branch 'homebranch'
+sonali@Lenovo:~/git/java$ git checkout 
+HEAD                origin/HEAD         ppractical 
+homebranch          origin/master       
+master              origin/ppractical   
+sonali@Lenovo:~/git/java$ ls
+README.md  Spring
+sonali@Lenovo:~/git/java$ cd Spring/
+sonali@Lenovo:~/git/java/Spring$ git checkout 
+HEAD                origin/HEAD         ppractical 
+homebranch          origin/master       
+master              origin/ppractical   
+sonali@Lenovo:~/git/java/Spring$ git checkout -b homebranch
+fatal: A branch named 'homebranch' already exists.
+sonali@Lenovo:~/git/java/Spring$ cd java
+bash: cd: java: No such file or directory
+sonali@Lenovo:~/git/java/Spring$ cd
+sonali@Lenovo:~$ cd git
+sonali@Lenovo:~/git$ cd java
+sonali@Lenovo:~/git/java$ git add Spring/
+sonali@Lenovo:~/git/java$ git status
+On branch homebranch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Spring/Register.html
+
+sonali@Lenovo:~/git/java$ git commit
+Aborting commit due to empty commit message.
+sonali@Lenovo:~/git/java$ git commit -m "add file Register.html"
+[homebranch 392ad62] add file Register.html
+ 1 file changed, 33 insertions(+)
+ create mode 100644 Spring/Register.html
+sonali@Lenovo:~/git/java$ ls
+README.md  Spring
+sonali@Lenovo:~/git/java$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': sonali1223
+Password for 'https://sonali1223@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 893 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/sonali1223/java.git
+   a23868d..392ad62  homebranch -> homebranch
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': sonali1223
+Password for 'https://sonali1223@github.com': 
+Everything up-to-date
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git commit -m "add file Iterator.java"
+On branch homebranch
+Untracked files:
+	Iterator.java
+
+nothing added to commit but untracked files present
+sonali@Lenovo:~/git/java$ git status
+On branch homebranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Iterator.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+sonali@Lenovo:~/git/java$ git commit
+On branch homebranch
+Untracked files:
+	Iterator.java
+
+nothing added to commit but untracked files present
+sonali@Lenovo:~/git/java$ git status
+On branch homebranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Iterator.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git checkout -b homebranch
+fatal: A branch named 'homebranch' already exists.
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': sonali1223
+Password for 'https://sonali1223@github.com': 
+Everything up-to-date
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git checkout 
+sonali@Lenovo:~/git/java$ git checkout -b homebranch
+fatal: A branch named 'homebranch' already exists.
+sonali@Lenovo:~/git/java$ hit status
+No command 'hit' found, did you mean:
+ Command 'hot' from package 'hopenpgp-tools' (universe)
+ Command 'vit' from package 'vit' (universe)
+ Command 'hkt' from package 'hopenpgp-tools' (universe)
+ Command 'hist' from package 'loki' (universe)
+ Command 'git' from package 'git' (main)
+ Command 'hitc' from package 'pvm-examples' (universe)
+ Command 'ht' from package 'tex4ht' (universe)
+ Command 'wit' from package 'wit' (universe)
+hit: command not found
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git status
+On branch homebranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Iterator.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+sonali@Lenovo:~/git/java$ git commit -m "updated Iterator.java"
+On branch homebranch
+Untracked files:
+	Iterator.java
+
+nothing added to commit but untracked files present
+sonali@Lenovo:~/git/java$ git status
+On branch homebranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Iterator.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+sonali@Lenovo:~/git/java$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': sonali1223  
+Password for 'https://sonali1223@github.com': 
+Everything up-to-date
+sonali@Lenovo:~/git/java$ ls
+Iterator.java  README.md  Spring
+sonali@Lenovo:~/git/java$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com':   
+
